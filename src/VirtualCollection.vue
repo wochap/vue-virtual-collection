@@ -16,7 +16,7 @@
     <div class="vue-virtual-collection" :style="outerStyle" @scroll.passive="onScroll" ref="outer">
         <div class="vue-virtual-collection-container" :style="containerStyle">
             <div v-for="item in displayItems" class="cell-container" :key="item.key" :style="getComputedStyle(item)">
-                <slot name="cell" :data="item.data"></slot>
+                <slot name="cell" :data="item.data" :index="item.itemIndex"></slot>
             </div>
         </div>
     </div>
