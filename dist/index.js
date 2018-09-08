@@ -815,7 +815,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "cell-container",
       style: (_vm.getComputedStyle(item))
     }, [_vm._t("cell", null, {
-      data: item.data
+      data: item.data,
+      index: item.itemIndex
     })], 2)
   }))])
 },staticRenderFns: []}
